@@ -1,0 +1,27 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Search For A game</title>
+</head>
+
+<body>
+            <form action="Controller" method="post">
+                <h3 style="color:red">Search for a game:</h3> <input type="text" name="games" id="gameName" style="border:none; border-bottom:1px solid black;">
+                
+                <input type="hidden" name="action1" value="Games" />
+                <input type="hidden" name="action" value="oneGame"/>
+                <input type="submit" value="search" />
+            </form>
+            
+            <form action="Controller" method="post">
+            	<input type="hidden" name="action" value="listGames"/>
+            	<input type="hidden" name="action1" value="Games"/>
+            	<input type="submit" value="All Games"/>
+            </form>
+
+</body>
+</html>
